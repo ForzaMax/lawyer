@@ -51,15 +51,27 @@
     text-overflow: ellipsis;
   }
 
+  &__desc {
+    margin-top: 40px;
+    font-weight: 300;
+  }
+
+  &__experience {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
   &__overlay {
     position: absolute;
     opacity: 0;
     inset: 0;
-
+    text-align: center;
     padding: 83px 15px;
 
     background: #fff;
     color: #222;
+    transition: 0.3s;
 
     &:hover {
       opacity: 1;

@@ -160,13 +160,24 @@ a {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+.person__desc {
+  margin-top: 40px;
+  font-weight: 300;
+}
+.person__experience {
+  margin-top: 40px;
+  font-weight: 600;
+  font-size: 16px;
+}
 .person__overlay {
   position: absolute;
   opacity: 0;
   inset: 0;
+  text-align: center;
   padding: 83px 15px;
   background: #fff;
   color: #222;
+  transition: 0.3s;
 }
 .person__overlay:hover {
   opacity: 1;
@@ -206,7 +217,7 @@ a {
   border-bottom: 1px solid var(--white-color-100, #fff);
   border-left: 1px solid var(--white-color-100, #fff);
 }
-.corner__lb--small {
+.corner__lb_small {
   width: 25px;
   height: 25px;
   border-bottom: 1px solid var(--blue-color-100, #4f8ff0);
@@ -391,13 +402,14 @@ a {
 }
 
 .card {
+  position: relative;
   max-width: 424px;
   height: 250px;
   padding: 50px 32px;
   background-color: #fff;
   color: #222;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .card__title {
   margin-top: 15px;
@@ -473,6 +485,12 @@ a {
 }
 .about__title span {
   color: var(--blue-color-100, #4f8ff0);
+}
+.about__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .about__subtitle {
   text-align: left;
@@ -562,4 +580,52 @@ a {
 }
 .feedback__btn {
   margin-right: 24px;
+}
+
+.article {
+  color: #222;
+  max-width: 424px;
+  height: 481px;
+}
+.article__title {
+  margin-top: 13px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+}
+.article__date {
+  margin-top: 16px;
+  font-size: 12px;
+  font-weight: 300;
+}
+.article__text {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  max-height: 6em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.matherials {
+  min-height: 913px;
+  padding: 80px 0;
+}
+.matherials__title {
+  text-align: center;
+}
+.matherials__subtitle {
+  max-width: 920px;
+  margin: 37px auto 0;
+}
+.matherials__middle-wrapper {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+.matherials__btn {
+  display: block;
+  margin: 48px auto 0;
 }/*# sourceMappingURL=style.css.map */

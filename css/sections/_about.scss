@@ -12,6 +12,11 @@
     }
   }
 
+  &__img {
+    object-fit: cover;
+    object-position: center;
+  }
+
   &__subtitle {
     text-align: left;
     margin-top: 37px;
