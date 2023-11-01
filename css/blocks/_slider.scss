@@ -1,0 +1,44 @@
+.slider {
+  @include flex-row-sb;
+
+  &__wrapper {
+    @include flex-row-sb;
+  }
+
+  &__dot-wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__dot {
+    width: 4px;
+
+    // margin-right тут костыль
+    margin-right: 8px;
+    height: 24px;
+    background: var(--white-color-300, #e6e6e6);
+    border: none;
+
+    &_active {
+      height: 40px;
+      background: var(--blue-color-100, #4f8ff0);
+    }
+  }
+
+  &__button-wrapper {
+    @include flex-row-aic;
+  }
+
+  &__button-slash {
+    width: 32px;
+    background: #e6e6e6;
+    border: none;
+    height: 2px;
+    transform: rotateZ(115deg);
+  }
+
+  &__button-arrow {
+    background: none;
+    border: none;
+  }
+}

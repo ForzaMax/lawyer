@@ -1,0 +1,74 @@
+.corner {
+  // дефолт как во второй секции
+  width: 35px;
+  height: 35px;
+  border: none;
+  position: relative;
+
+  &__lt {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    border-top: 1px solid var(--white-color-100, #fff);
+    border-left: 1px solid var(--white-color-100, #fff);
+
+    &_small {
+      width: 25px;
+      height: 25px;
+
+      border-top: 1px solid var(--blue-color-100, #4f8ff0);
+      border-left: 1px solid var(--blue-color-100, #4f8ff0);
+    }
+  }
+
+  &__lb {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+    border-bottom: 1px solid var(--white-color-100, #fff);
+    border-left: 1px solid var(--white-color-100, #fff);
+    &--small {
+      width: 25px;
+      height: 25px;
+
+      border-bottom: 1px solid var(--blue-color-100, #4f8ff0);
+      border-left: 1px solid var(--blue-color-100, #4f8ff0);
+    }
+  }
+
+  &__rt {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    border-top: 1px solid var(--white-color-100, #fff);
+    border-right: 1px solid var(--white-color-100, #fff);
+
+    &_small {
+      width: 25px;
+      height: 25px;
+
+      border-top: 1px solid var(--blue-color-100, #4f8ff0);
+      border-right: 1px solid var(--blue-color-100, #4f8ff0);
+    }
+  }
+
+  &__rb {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    border-right: 1px solid var(--white-color-100, #fff);
+    border-bottom: 1px solid var(--white-color-100, #fff);
+
+    &_small {
+      width: 25px;
+      height: 25px;
+
+      border-right: 1px solid var(--blue-color-100, #4f8ff0);
+      border-bottom: 1px solid var(--blue-color-100, #4f8ff0);
+    }
+  }
+}

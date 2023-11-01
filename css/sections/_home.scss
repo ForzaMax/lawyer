@@ -1,0 +1,47 @@
+.home {
+  min-height: 820px;
+  background-image: url("../img/bg/home_bg.webp");
+
+  &__container {
+    min-height: inherit;
+  }
+
+  &__title {
+    // по идее пэддинг задается секции, но что-то съезжает
+    padding-top: 260px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    display: block;
+    color: var(--blue-color-100, #4f8ff0);
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: var(--white-color-100, #fff);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 48px;
+  }
+
+  &__slider {
+    margin-top: 202px;
+  }
+}

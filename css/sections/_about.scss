@@ -1,0 +1,36 @@
+.about {
+  min-height: 548px;
+  padding: 80px 0;
+
+  &__container {
+    @include flex-row-sb;
+  }
+
+  &__title {
+    span {
+      color: var(--blue-color-100, #4f8ff0);
+    }
+  }
+
+  &__subtitle {
+    text-align: left;
+    margin-top: 37px;
+    max-width: 720px;
+    max-height: 264px;
+
+    line-height: 150%; /* 24px */
+  }
+
+  &__buttons {
+    margin-top: 35px;
+    // .btn{
+    //     &:last-child {
+    //       margin-left: 24px;
+    //     }
+    // }
+  }
+
+  &__btn {
+    margin-right: 24px;
+  }
+}

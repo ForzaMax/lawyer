@@ -1,0 +1,38 @@
+.header {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
+  width: 100%;
+
+  &__top {
+    min-height: 52px;
+    background: #010101;
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+  }
+
+  &__bottom {
+    min-height: 112px;
+    background: rgba(1, 1, 1, 0.76);
+  }
+
+  &__call-btn {
+    color: var(--blue-color-100, #4f8ff0);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+
+    background: inherit;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__container {
+    min-height: inherit;
+    @include flex-row-sb-aic;
+  }
+}

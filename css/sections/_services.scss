@@ -1,0 +1,32 @@
+.services {
+  padding: 80px 0;
+  min-height: 960px;
+
+  background: #f7f7f7;
+
+  &__container {
+    min-height: 800px;
+
+    @include flex-col-sb-aic;
+  }
+
+  &__subtitle {
+    max-width: 920px;
+    margin-top: 37px;
+  }
+
+  &__wrapper {
+    margin-top: 48px;
+    gap: 38px 24px;
+
+    @include flex-row-wrap;
+  }
+
+  &__card {
+    gap: 10px;
+  }
+
+  &__btn {
+    margin-top: 48px;
+  }
+}

@@ -1,0 +1,53 @@
+.card {
+  max-width: 424px;
+  height: 250px;
+  padding: 50px 32px;
+  background-color: #fff;
+  color: #222;
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  &__title {
+    margin-top: 15px;
+
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+  }
+
+  &__descr {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  &__icon {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__title,
+  &__descr {
+    // это свойство закинул с инета, не уверен в нём, но работает
+    max-height: 4em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+
+  &:hover {
+    background: var(--blue-color-100, #4f8ff0);
+    color: #ffffff;
+  }
+
+  &:hover path {
+    fill: white;
+  }
+}

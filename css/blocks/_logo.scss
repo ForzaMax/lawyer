@@ -1,0 +1,18 @@
+.logo {
+  &__title {
+    color: var(--white-color-100, #fff);
+    font-size: 20px;
+    font-weight: 900;
+
+    // изменил line-height: 150% на 130%, что бы уменьшить расстояние между спэном и подзаголовком. Это вместо mt -10px
+    line-height: 130%; /* 30px */
+    text-transform: lowercase;
+  }
+
+  &__highlight {
+    color: var(--blue-color-100, #4f8ff0);
+    font-size: 28px;
+    text-transform: uppercase;
+    display: block;
+  }
+}
