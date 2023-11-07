@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LAWYER</title>
+    <title>"Правозащитник" - юридическая компания</title>
     <link rel="icon" href="./favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    -
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Rubik:wght@400;700&display=swap"
       rel="stylesheet"
@@ -15,7 +14,6 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Header -->
     <header class="header">
       <!--  Header/Top-->
       <div class="header__top">
@@ -60,7 +58,7 @@
           </div>
 
           <!-- Header/Bottom/Nav -->
-          <nav class="nav">
+          <nav class="header-nav nav">
             <ul class="nav__list">
               <li><a class="nav__link" href="#services">Услуги</a></li>
               <li><a class="nav__link" href="">О компании</a></li>
@@ -516,14 +514,15 @@
           <div class="feedback__header">
             <div class="feedback__title title">Что о нас говорят клиенты</div>
 
-            <!-- СДЕЛАТЬ СИНИМИ -->
             <div class="slider__button-wrapper">
               <button class="slider__button-arrow">
-                <img src="./icons/arrowleft.svg" alt="arrowleft" />
+                <img src="./icons/arrowleftblue.svg" alt="arrowleft" />
               </button>
-              <span class="slider__button-slash"></span>
+              <span
+                class="slider__button-slash slider__button-slash_blue"
+              ></span>
               <button class="slider__button-arrow">
-                <img src="./icons/arrowright.svg" alt="arrowright" />
+                <img src="./icons/arrowrightblue.svg" alt="arrowright" />
               </button>
             </div>
           </div>
@@ -615,19 +614,28 @@
 
           <div class="matherials__middle-wrapper">
             <article class="matherials__article article">
-              <div class="article__corner corner corner__lb"></div>
-              <div class="article__corner corner corner__lt"></div>
-              <div class="article__corner corner corner__rb"></div>
-              <div class="article__corner corner corner__rt"></div>
-              <img
-                src="./img/matherials/matherials001.webp"
-                alt="city"
-                class="article__img"
-              />
+              <div class="article__img-block">
+                <div class="article__overlay">
+                  <div class="article__corner corner corner__lb"></div>
+                  <div class="article__corner corner corner__lt"></div>
+                  <div class="article__corner corner corner__rb"></div>
+                  <div class="article__corner corner corner__rt"></div>
+                </div>
+
+                <img
+                  src="./img/matherials/matherials001.webp"
+                  alt="friendship"
+                  class="article__img"
+                />
+              </div>
               <h3 class="article__title">
                 Воистину радостный звук: шёпот бессменных лидеров
               </h3>
-              <p class="article__date">24 апр. 2023 г.</p>
+              <div class="article__date-div">
+                <p class="article__date">24 апр. 2023 г.</p>
+                <div class="article__date-line"></div>
+              </div>
+
               <p class="article__text">
                 Предварительные выводы неутешительны: синтетическое
                 тестирование, а также свежий взгляд на привычные вещи —
@@ -636,20 +644,27 @@
               </p>
             </article>
             <article class="matherials__article article">
-              <div class="article__corner corner corner__lb"></div>
-              <div class="article__corner corner corner__lt"></div>
-              <div class="article__corner corner corner__rb"></div>
-              <div class="article__corner corner corner__rt"></div>
+              <div class="article__img-block">
+                <div class="article__overlay">
+                  <div class="article__corner corner corner__lb"></div>
+                  <div class="article__corner corner corner__lt"></div>
+                  <div class="article__corner corner corner__rb"></div>
+                  <div class="article__corner corner corner__rt"></div>
+                </div>
 
-              <img
-                src="./img/matherials/matherials002.webp"
-                alt="eifel tower"
-                class="article__img"
-              />
+                <img
+                  src="./img/matherials/matherials002.webp"
+                  alt="friendship"
+                  class="article__img"
+                />
+              </div>
               <h3 class="article__title">
                 Франция намерена исследовать, почему объемы выросли
               </h3>
-              <p class="article__date">12 мар. 2023 г.</p>
+              <div class="article__date-div">
+                <p class="article__date">12 мар. 2023 г.</p>
+                <div class="article__date-line"></div>
+              </div>
               <p class="article__text">
                 Для современного мира новая модель организационной деятельности
                 влечет за собой процесс внедрения и модернизации вывода текущих
@@ -659,7 +674,6 @@
             </article>
             <article class="matherials__article article">
               <div class="article__img-block">
-                <!-- ИСПРАВИТЬ -->
                 <div class="article__overlay">
                   <div class="article__corner corner corner__lb"></div>
                   <div class="article__corner corner corner__lt"></div>
@@ -677,7 +691,11 @@
               <h3 class="article__title">
                 Сплочённость команды профессионалов продолжает удивлять
               </h3>
-              <p class="article__date">02 фев. 2023 г.</p>
+              <div class="article__date-div">
+                <p class="article__date">02 фев. 2023 г.</p>
+                <div class="article__date-line"></div>
+              </div>
+
               <p class="article__text">
                 Современные технологии достигли такого уровня, что курс на
                 социально-ориентированный национальный проект способствует
@@ -689,6 +707,129 @@
           <button class="matherials__btn btn">Все новости</button>
         </div>
       </section>
+
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__top-container container">
+            <!-- переименовать класс ниже -->
+            <div class="footer__top-top">
+              <div class="footer__logo logo">
+                <a href="">
+                  <h2 class="logo__title">
+                    <span class="logo__highlight">Правозащитник</span>
+                    юридическая компания
+                  </h2>
+                </a>
+              </div>
+              <div class="footer__subtitle subtitle">
+                Предварительные выводы неутешительны: синтетическое
+                тестирование, а также свежий взгляд на привычные вещи —
+                безусловно открывает новые горизонты для экономической
+                целесообразности принимаемых решений.
+              </div>
+            </div>
+
+            <div class="footer__line"></div>
+
+            <div class="footer__top-bottom">
+              <div class="footer__contact contact">
+                <!-- Contact Item#1 -->
+                <div class="contact__item">
+                  <div class="contact__icon-container">
+                    <img
+                      src="./icons/map.svg"
+                      alt="Location"
+                      class="contact__icon"
+                    />
+                  </div>
+
+                  <div class="contact__info">
+                    <div class="contact__label">Запись на консультанцию</div>
+                    <div class="contact__detail">+7 (922) 022-94-82</div>
+                  </div>
+                </div>
+
+                <!-- Contact Item#2 -->
+                <div class="contact__item">
+                  <div class="contact__icon-container">
+                    <img
+                      src="./icons/phonee.svg"
+                      alt="Phone"
+                      class="contact__icon"
+                    />
+                  </div>
+
+                  <div class="contact__info">
+                    <div class="contact__label">Корреспонденция</div>
+                    <div class="contact__detail">janis62@yahoo.com</div>
+                  </div>
+                </div>
+
+                <!-- Contact Item#3 -->
+                <div class="contact__item">
+                  <div class="contact__icon-container">
+                    <img
+                      src="./icons/maill.svg"
+                      alt="email"
+                      class="contact__icon"
+                    />
+                  </div>
+
+                  <div class="contact__info">
+                    <div class="contact__label">НАШ АДРЕС</div>
+                    <div class="contact__detail">
+                      г. Одинцово, пр. Будапештская, 40
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer__menu menu">
+                <ul class="menu__list">
+                  <li><a class="menu__link" href="#services">Услуги</a></li>
+                  <li><a class="menu__link" href="#about">О компании</a></li>
+                  <li><a class="menu__link" href="#">Сертификаты</a></li>
+                  <li><a class="menu__link" href="#feedback">Отзывы</a></li>
+                  <li>
+                    <a class="menu__link" href="#matherials"
+                      >Полезные материалы</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu__link" href="#">Благотворительность</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer__profile profile">
+                <div class="profile__top-wrapper">
+                  <div class="profile__photo">
+                    <img src="./img/footer/footer001.webp" alt="Lawyer" />
+                  </div>
+                  <div class="profile__name-wrapper">
+                    <p class="profile__name">Миронов Александр</p>
+                    <p class="profile__post">Ведущий юрист</p>
+                  </div>
+                </div>
+
+                <div class="profile__desc">
+                  Есть над чем задуматься: тщательные исследования конкурентов
+                  разоблачены. Идейные соображения высшего порядка, а также
+                  перспективное планирование играет
+                </div>
+                <button class="profile__btn btn">Задать вопрос юристу</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__bottom-container container">
+            <p class="footer__rights">Все права защищены, 2023</p>
+            <p class="footer__policy">Политика обработки персональных данных</p>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

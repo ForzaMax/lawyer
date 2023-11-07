@@ -1,0 +1,41 @@
+.profile {
+  color: #fff;
+  max-width: 424px;
+
+  &__name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  &__post {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 120%;
+  }
+
+  &__desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    margin-bottom: 24px;
+  }
+
+  &__top-wrapper {
+    @include flex-row-sb-aic;
+    margin-bottom: 16px;
+  }
+
+  &__photo {
+    margin-right: 24px;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__name-wrapper {
+    margin-right: auto;
+  }
+}

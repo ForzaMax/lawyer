@@ -1,0 +1,61 @@
+.footer {
+  width: 100%;
+  background: var(--colors-black-text, #222);
+  box-sizing: content-box;
+
+  &__top {
+    padding: 80px 0 16px;
+    min-height: 535px;
+  }
+
+  // переименовать
+  &__top-top {
+    @include flex-row-sb-aic;
+  }
+
+  &__bottom {
+    min-height: 49px;
+    background: #181818;
+
+    position: absolute;
+    width: 100%;
+  }
+
+  &__subtitle {
+    color: #f8f5f4;
+    width: 862px;
+  }
+
+  &__line {
+    margin-top: 48px;
+
+    width: 1320px;
+    height: 1px;
+    opacity: 0.2;
+    background: #8c8c8c;
+  }
+
+  &__top-bottom {
+    margin-top: 48px;
+
+    @include flex-row-sb;
+  }
+
+  &__menu {
+    margin-left: auto;
+    margin-right: 24px;
+  }
+
+  &__bottom-container {
+    margin-top: 16px;
+    @include flex-row-sb-aic;
+  }
+
+  &__rights,
+  &__policy {
+    color: var(--white-color-100, #fff);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+}

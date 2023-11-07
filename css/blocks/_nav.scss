@@ -17,4 +17,11 @@
       text-decoration: underline;
     }
   }
+
 }
+
+  @media (max-width: 1024px) {
+    .nav {
+      display: none;
+    }
+  }

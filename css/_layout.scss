@@ -2,7 +2,7 @@
   margin: 0 auto;
   padding: 0 15px;
 
-  width: 1320px;
+  max-width: 1320px;
   box-sizing: content-box;
 }
 
@@ -43,4 +43,16 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 69px;
+  }
+}
+
+@media (max-width: 564px) {
+  .container {
+    padding: 0 24px 0 30px;
+  }
 }

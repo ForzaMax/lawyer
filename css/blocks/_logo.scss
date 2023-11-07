@@ -16,3 +16,15 @@
     display: block;
   }
 }
+
+@media (max-width: 1024px) {
+  .logo {
+    &__title {
+      font-size: 16px;
+    }
+
+    &__highlight {
+      font-size: 22px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.contact {
+  max-width: 419px;
+
+  &__item {
+    margin-bottom: 24px;
+    @include flex-row-aic;
+  }
+
+  &__icon-container {
+    width: 55px;
+    height: 55px;
+    background: var(--color-black-100, #2c2c2c);
+    margin-right: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__info {
+    margin-left: 0 auto;
+  }
+
+  &__label {
+    color: var(--white-color-400, #8c8c8c);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__detail {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+}

@@ -2,3 +2,9 @@
   min-height: 52px;
   gap: 28px;
 }
+
+@media (max-width: 662px) {
+  .contacts__item-contact:nth-of-type(2) {
+    display: none;
+  }
+}

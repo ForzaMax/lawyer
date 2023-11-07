@@ -36,3 +36,11 @@
     @include flex-row-sb-aic;
   }
 }
+
+@media (max-width: 1024px) {
+  .header {
+    &__bottom {
+      min-height: 84px;
+    }
+  }
+}
