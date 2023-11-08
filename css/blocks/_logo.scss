@@ -3,6 +3,7 @@
     color: var(--white-color-100, #fff);
     font-size: 20px;
     font-weight: 900;
+    text-align: left;
 
     // изменил line-height: 150% на 130%, что бы уменьшить расстояние между спэном и подзаголовком. Это вместо mt -10px
     line-height: 130%; /* 30px */

@@ -4,6 +4,8 @@
   max-width: 320px;
   color: #222;
 
+
+
   /* минимальная ширина по адаптивному макету */
   min-width: 250px;
 
@@ -73,8 +75,29 @@
     color: #222;
     transition: 0.3s;
 
+    min-height: inherit;
+
     &:hover {
       opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 1265px) {
+  .person {
+    &__name {
+      margin-top: -6px;
+    }
+    &__post {
+      margin-top: 10px;
+    }
+
+    &__desc {
+      margin-top: 20px;
+    }
+
+    &__experience {
+      margin-top: 10px;
     }
   }
 }

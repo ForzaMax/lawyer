@@ -1,5 +1,6 @@
 .review {
-  width: 648px;
+  max-width: 648px;
+  min-width: 340px;
   padding: 32px;
   background: #fff;
   box-shadow: 2px 2px 10px 0px rgba(33, 33, 33, 0.15);
@@ -33,5 +34,40 @@
   }
   &__name {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .review {
+    // min-width: 576px;
+    // &__text {
+    //   max-width: 512px;
+    // }
+  }
+}
+
+@media (max-width: 1265px) {
+}
+
+@media (max-width: 717px) {
+  .review {
+    padding: 24px;
+
+    &__name {
+      font-size: 18px;
+    }
+
+    // &__text {
+    //   width: 100%;
+    // }
+
+    &__icon {
+      display: none;
+    }
+
+    &__text {
+      max-height: 44em;
+      -webkit-line-clamp: 19;
+    }
   }
 }

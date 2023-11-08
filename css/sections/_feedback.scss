@@ -1,8 +1,8 @@
 .feedback {
-  min-height: 588px;
+  // min-height: 588px;
   padding: 80px 0;
 
-  background-image: url("../img/bg/feedback_bg.webp");
+  background: url("../img/bg/feedback_bg.webp") center center/cover no-repeat;
 
   &__header {
     @include flex-row-sb;
@@ -14,10 +14,52 @@
   }
 
   &__buttons {
-    margin-top: 38px;
+    margin-top: 32px;
   }
 
   &__btn {
     margin-right: 24px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .feedback {
+    padding: 60px 0;
+
+    &__middle-wrapper {
+      overflow: scroll;
+      gap: 24px;
+    }
+
+    &__buttons {
+      margin-top: 36px;
+    }
+  }
+}
+
+@media (max-width: 717px) {
+  .feedback {
+    // max-width: 395px;
+    padding: 31px 0 40px;
+    background-size
+    // min-width: ;
+
+    &__middle-wrapper {
+      margin-top: 24px;
+      overflow-x: scroll;
+      gap: 24px;
+    }
+
+    &__buttons {
+      margin-top: 24px;
+      :last-child {
+        margin-top: 16px;
+      }
+    }
+
+    &__btn {
+      display: block;
+      margin: 0 auto;
+    }
   }
 }

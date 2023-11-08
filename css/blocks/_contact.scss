@@ -1,5 +1,6 @@
 .contact {
   max-width: 419px;
+  min-width: 331px;
 
   &__item {
     margin-bottom: 24px;
@@ -35,3 +36,23 @@
     line-height: 150%;
   }
 }
+
+@media screen and (max-width: 955px) {
+  .contact {
+    &__detail {
+      font-size: 14px;
+    }
+
+    &__icon-container {
+      width: 45px;
+      height: 45px;
+    }
+
+    &__icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+
