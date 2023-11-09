@@ -46,6 +46,7 @@
     &__icon-container {
       width: 45px;
       height: 45px;
+      margin-right: 16px;
     }
 
     &__icon {
@@ -55,4 +56,15 @@
   }
 }
 
+@media screen and (max-width: 670px) {
+  .contact {
+    &__item {
+      width: 331px;
+    }
 
+    &__icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
