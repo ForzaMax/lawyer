@@ -14,18 +14,23 @@
   cursor: pointer;
   transition: 0.3s;
 
-  &_grey {
-    color: var(--colors-black-text, #222);
-    background: var(--white-color-300, #e6e6e6);
-
-    border: 2px solid var(--white-color-300, #e6e6e6);
-  }
-
   &:hover {
     border: 2px solid var(--blue-color-100, #4f8ff0);
     background: var(--white-color-100, #fff);
 
     color: var(--blue-color-100, #4f8ff0);
+  }
+
+  &_grey {
+    color: var(--colors-black-text, #222);
+    background: var(--white-color-300, #e6e6e6);
+
+    border: 2px solid var(--white-color-300, #e6e6e6);
+    &:hover {
+      border: 2px solid var(--white-color-300, #e6e6e6);
+      background: var(--white-color-100, #fff);
+      color: var(--colors-black-text, #222);
+    }
   }
 
   &:active {
