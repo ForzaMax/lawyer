@@ -709,7 +709,7 @@ button {
   scrollbar-width: none;
   /* Hide scrollbar for Chrome, Safari and Opera */
 }
-.sliders ::-webkit-scrollbar {
+.sliders::-webkit-scrollbar {
   display: none;
 }
 .sliders__track {

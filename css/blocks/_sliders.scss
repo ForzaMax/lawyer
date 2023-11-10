@@ -3,7 +3,7 @@
   // max-width: $container-width;
   overflow: scroll;
 
-  ::-webkit-scrollbar {
+  &::-webkit-scrollbar {
     display: none;
   }
 
