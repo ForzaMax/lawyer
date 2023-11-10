@@ -10,13 +10,17 @@ $responsive-padding: 15px;
 }
 
 @media (max-width: 835px) {
+  $responsive-padding: 69px;
+
   .container {
-    $responsive-padding: 69px;
+    padding: 0 $responsive-padding;
   }
 }
 
 @media (max-width: 390px) {
+  $responsive-padding: 26px;
+
   .container {
-    $responsive-padding: 26px;
+    padding: 0 $responsive-padding;
   }
 }
