@@ -5,7 +5,30 @@
   font-weight: 800;
   line-height: 150%; /* 42px */
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
+
+  &::after {
+    content: "";
+    display: block;
+    margin-top: 10px;
+    background: #4f8ff0;
+    width: 50px;
+    height: 3px;
+  }
+
+  &_center {
+    text-align: center;
+
+    &::after {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      margin-top: 10px;
+      background: #4f8ff0;
+      width: 50px;
+      height: 3px;
+    }
+  }
 }
 
 @media (max-width: 1024px) {

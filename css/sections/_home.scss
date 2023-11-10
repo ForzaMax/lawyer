@@ -1,7 +1,7 @@
 .home {
   min-height: 820px;
   margin-top: 52px;
-  background-image: url("../img/bg/home_bg.webp");
+  background: url("../img/bg/home_bg.webp") center center/cover no-repeat;
   padding: 260px 0 36px;
 
   &__title {

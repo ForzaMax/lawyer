@@ -1,9 +1,7 @@
 .item-contact {
-  display: flex;
-  align-items: center;
-
-  // Можно ли в блоке прописывать gap?
-  gap: 7px;
+  // display: flex;
+  // align-items: center;
+  // gap: 7px;
 
   &__text {
     color: #fff;
@@ -13,5 +11,11 @@
 
     display: flex;
     align-items: center;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
   }
 }

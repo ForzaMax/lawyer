@@ -6,6 +6,11 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
+// img {
+//   object-fit: cover;
+//   object-position: center;
+// }
+
 /* для плавного скролла после перехода по ссылке */
 html {
   scroll-behavior: smooth;
@@ -21,4 +26,9 @@ a {
   // &:hover {
   //   text-decoration: none;
   // }
+}
+
+button {
+  cursor: pointer;
+  // cursor: url("../icons/la_hand-pointer.svg"), auto;
 }

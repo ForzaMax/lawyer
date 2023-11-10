@@ -5,11 +5,11 @@
   padding: 50px 32px;
   background-color: #fff;
   color: #222;
-  cursor: pointer;
+  cursor: url(../icons/la_hand-pointer-gray.svg), pointer;
 
   // убрать наверно
 
-  transition: 0.5s;
+  transition: 0.3s;
 
   &__title {
     margin-top: 15px;

@@ -3,11 +3,10 @@
 
   max-width: 320px;
   color: #222;
-
-
+  cursor: url(../icons/la_hand-pointer.svg), pointer;
 
   /* минимальная ширина по адаптивному макету */
-  min-width: 250px;
+  min-width: 300px;
 
   background: #fff;
   box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
@@ -99,5 +98,11 @@
     &__experience {
       margin-top: 10px;
     }
+  }
+}
+
+@media screen and (max-width: 564px) {
+  .person {
+    min-width: 250px;
   }
 }

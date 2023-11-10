@@ -11,7 +11,7 @@
   line-height: 120%;
   text-transform: uppercase;
 
-  cursor: pointer;
+  // cursor: pointer;
   transition: 0.3s;
 
   &:hover {
@@ -19,6 +19,13 @@
     background: var(--white-color-100, #fff);
 
     color: var(--blue-color-100, #4f8ff0);
+  }
+
+  &:active {
+    border: 2px solid var(--blue-color-100, #4f8ff0);
+    background: var(--blue-color-100, #4f8ff0);
+
+    color: var(--white-color-100, #fff);
   }
 
   &_grey {
@@ -31,12 +38,12 @@
       background: var(--white-color-100, #fff);
       color: var(--colors-black-text, #222);
     }
-  }
 
-  &:active {
-    border: 2px solid var(--white-color-300, #e6e6e6);
-    background: var(--white-color-300, #e6e6e6);
+    &:active {
+      border: 2px solid var(--white-color-300, #e6e6e6);
+      background: var(--white-color-300, #e6e6e6);
 
-    color: black;
+      color: black;
+    }
   }
 }

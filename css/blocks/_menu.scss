@@ -1,5 +1,6 @@
 .menu {
   min-width: 312px;
+  transition: 0.3s;
 
   &__list {
     color: var(--white-color-100, #fff);

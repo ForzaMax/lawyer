@@ -13,27 +13,17 @@
     }
   }
 
-  &__img {
-    object-fit: cover;
-    object-position: center;
-  }
-
   &__subtitle {
     text-align: left;
     margin-top: 37px;
     max-width: 720px;
     // max-height: 264px;
 
-    line-height: 150%; 
+    line-height: 150%;
   }
 
   &__buttons {
     margin-top: 35px;
-    // .btn{
-    //     &:last-child {
-    //       margin-left: 24px;
-    //     }
-    // }
   }
 
   &__btn {
@@ -86,3 +76,14 @@
     }
   }
 }
+
+
+@media screen and (max-width: 564px) {
+  .article {
+    min-width: 250px;
+    &__title {
+      font-size: 12px;
+    }
+  }
+}
+

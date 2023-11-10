@@ -18,9 +18,10 @@
   }
 
   &__wrapper {
-    margin-top: 48px;
-    @include flex-row-sb;
-    gap: 24px;
+    // margin-top: 48px;
+    // @include flex-row-sb;
+    // gap: 24px;
+
     // display: grid;
     // grid-template-columns: repeat(auto-fill, minmax(312px, 1fr));
   }
