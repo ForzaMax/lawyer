@@ -1,7 +1,6 @@
 .sliders {
   margin: 0 auto;
-  // max-width: $container-width;
-  overflow: scroll;
+  max-width: 1320px;
 
   &::-webkit-scrollbar {
     display: none;
@@ -12,7 +11,9 @@
   scrollbar-width: none;
 
   &__track {
-    margin-top: 30px;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-top: 48px;
     display: flex;
     gap: 24px;
     overflow: scroll;
@@ -21,6 +22,10 @@
     /* Hide scrollbar for IE, Edge and Firefox */
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none;
+
+    &_card {
+      gap: 38px 24px;
+    }
   }
 
   /* Hide scrollbar for Chrome, Safari and Opera */
@@ -37,17 +42,125 @@
     &:last-child {
       margin-right: calc((100vw - $container-width) / 2);
     }
+
+    &_card {
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }
 
 @media (max-width: calc($container-width + $responsive-padding)) {
   .sliders {
+    &__track {
+      &_card {
+        padding: 0 15px;
+      }
+    }
+
     &__item {
       &:first-child {
         margin-left: $responsive-padding;
       }
       &:last-child {
         margin-right: $responsive-padding;
+      }
+
+      &_card {
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1350px) {
+  .sliders {
+    &__track {
+      &_card {
+        justify-content: center;
+        gap: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 835px) {
+  .sliders {
+    &__item {
+      &:first-child {
+        margin-left: 69px;
+      }
+      &:last-child {
+        margin-right: 69px;
+      }
+
+      &_card {
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 726px) {
+  .sliders {
+    &__track {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      &_card {
+        padding: 0px;
+        margin-top: 24px;
+      }
+    }
+
+    &__item {
+      &_card {
+        &:first-child {
+          margin-left: 69px;
+        }
+        &:last-child {
+          margin-right: 69px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .sliders {
+    &__track {
+      &_card {
+        gap: 16px;
+      }
+    }
+    &__item {
+      &:first-child {
+        margin-left: 26px;
+      }
+      &:last-child {
+        margin-right: 26px;
+      }
+
+      &_card {
+        &:first-child {
+          margin-left: 26px;
+        }
+        &:last-child {
+          margin-right: 26px;
+        }
       }
     }
   }

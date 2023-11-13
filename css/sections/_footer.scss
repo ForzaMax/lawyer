@@ -47,6 +47,12 @@
     margin-right: 24px;
   }
 
+  &__bottom-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
   &__rights,
   &__policy {
     color: var(--white-color-100, #fff);
@@ -114,7 +120,7 @@
   }
 }
 
-@media screen and (max-width: 908px) {
+@media screen and (max-width: 833px) {
   .footer {
     &__top-bottom {
       flex-direction: column;
@@ -132,9 +138,12 @@
   .footer {
     &__bottom {
       height: 74px;
+    }
+
+    &__bottom-container {
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       gap: 8px;
     }
   }

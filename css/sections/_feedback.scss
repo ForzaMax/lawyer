@@ -63,3 +63,11 @@
     }
   }
 }
+
+@media (max-width: 564px) {
+  .feedback {
+    &__middle-wrapper {
+      margin-top: 24px;
+    }
+  }
+}

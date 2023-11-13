@@ -45,9 +45,6 @@
           </div>
 
           <button class="header__call-btn">Заказать звонок</button>
-          <form action="/submit" method="post">
-            <input type="submit" value="Заказать звонок" />
-          </form>
         </div>
       </div>
 
@@ -64,7 +61,7 @@
             </a>
           </div>
 
-          <!-- Header/Bottom/Nav -->
+          <!-- Nav -->
           <nav class="header-nav nav">
             <ul class="nav__list">
               <li><a class="nav__link" href="#services">Услуги</a></li>
@@ -76,8 +73,9 @@
             </ul>
           </nav>
 
-          <!-- <div class="burger">
-            <input class="burger__check" type="checkbox"/>
+          <!-- Burger -->
+          <div class="burger">
+            <input class="burger__check" type="checkbox" />
             <svg
               class="burger__icon burger__icon_open"
               xmlns="http://www.w3.org/2000/svg"
@@ -93,8 +91,21 @@
               <use xlink:href="#menu_burger"></use>
             </svg>
             <ul class="burger__list">
-              <svg class="burger__icon burger__icon_close">
-                <use xlink:href="#close_icon"></use>
+              <svg
+                class="burger__icon burger__icon_close"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="24px/close_icon">
+                  <path
+                    id="Vector"
+                    d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z"
+                    fill="white"
+                  />
+                </g>
               </svg>
               <a href="#" class="burger__link link">Услуги</a>
               <a href="#" class="burger__link link">О компании</a>
@@ -103,7 +114,7 @@
               <a href="#" class="burger__link link">Новости</a>
               <a href="#" class="burger__link link">Контакты</a>
             </ul>
-          </div> -->
+          </div>
         </div>
       </div>
     </header>
@@ -112,7 +123,6 @@
     <main class="main">
       <!-- Library section#1-->
       <section class="home">
-        <!-- исправить на без флекса -->
         <div class="home__container container">
           <h2 class="home__title">
             Оказываем весь комплекс
@@ -130,6 +140,7 @@
             <a href="#services">Наши услуги</a>
           </button>
 
+          <!-- Slider -->
           <div class="home__slider slider">
             <div class="slider__dot-wrapper">
               <button class="slider__dot slider__dot_active"></button>
@@ -141,7 +152,6 @@
               <button class="slider__button-arrow">
                 <img src="./icons/arrowleft.svg" alt="arrowleft" />
               </button>
-              <!-- можно закинуть svg -->
               <span class="slider__button-slash"></span>
               <button class="slider__button-arrow">
                 <img src="./icons/arrowright.svg" alt="arrowright" />
@@ -160,166 +170,195 @@
             мешает сосредоточиться. Lorem Ipsum используют потому, что тот
             обеспечивает более или менее стандартное заполнение шаблона
           </p>
+        </div>
 
-          <div class="services__wrapper">
-            <div class="services__card card">
-              <div class="card__corner corner corner__lb"></div>
-              <div class="card__corner corner corner__lt"></div>
-              <div class="card__corner corner corner__rb"></div>
-              <div class="card__corner corner corner__rt"></div>
+        <!-- Sliders -->
+        <div class="sliders">
+          <div class="services__wrapper sliders__track sliders__track_card">
+            <!-- CARD Slider item #1-->
+            <div class="sliders__item sliders__item_card">
+              <div class="services__card card">
+                <div class="card__corner corner corner__lb"></div>
+                <div class="card__corner corner corner__lt"></div>
+                <div class="card__corner corner corner__rb"></div>
+                <div class="card__corner corner corner__rt"></div>
 
-              <svg
-                class="card__icon"
-                width="36"
-                height="35"
-                viewBox="0 0 36 35"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M29.6665 5.83329V23.3333H12.1665V5.83329H29.6665ZM29.6665 2.91663H12.1665C10.5623 2.91663 9.24984 4.22913 9.24984 5.83329V23.3333C9.24984 24.9375 10.5623 26.25 12.1665 26.25H29.6665C31.2707 26.25 32.5832 24.9375 32.5832 23.3333V5.83329C32.5832 4.22913 31.2707 2.91663 29.6665 2.91663ZM18.6853 20.4166L13.6248 15.3125L15.6665 13.2562L18.6853 16.2895L26.1665 8.74996L28.2082 10.8062L18.6853 20.4166ZM6.33317 8.74996H3.4165V29.1666C3.4165 30.7708 4.729 32.0833 6.33317 32.0833H26.7498V29.1666H6.33317V8.74996Z"
-                  fill="#4F8FF0"
-                />
-              </svg>
+                <svg
+                  class="card__icon"
+                  width="36"
+                  height="35"
+                  viewBox="0 0 36 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.6665 5.83329V23.3333H12.1665V5.83329H29.6665ZM29.6665 2.91663H12.1665C10.5623 2.91663 9.24984 4.22913 9.24984 5.83329V23.3333C9.24984 24.9375 10.5623 26.25 12.1665 26.25H29.6665C31.2707 26.25 32.5832 24.9375 32.5832 23.3333V5.83329C32.5832 4.22913 31.2707 2.91663 29.6665 2.91663ZM18.6853 20.4166L13.6248 15.3125L15.6665 13.2562L18.6853 16.2895L26.1665 8.74996L28.2082 10.8062L18.6853 20.4166ZM6.33317 8.74996H3.4165V29.1666C3.4165 30.7708 4.729 32.0833 6.33317 32.0833H26.7498V29.1666H6.33317V8.74996Z"
+                    fill="#4F8FF0"
+                  />
+                </svg>
 
-              <h3 class="card__title">Банкротство физических лиц</h3>
-              <p class="card__descr">
-                Процедуру банкротства физических лиц в России регулирует закон
-                «О несостоятельности (банкротстве)».
-              </p>
+                <h3 class="card__title">Банкротство физических лиц</h3>
+                <p class="card__descr">
+                  Процедуру банкротства физических лиц в России регулирует закон
+                  «О несостоятельности (банкротстве)».
+                </p>
+              </div>
             </div>
 
-            <div class="services__card card">
-              <div class="card__corner corner corner__lb"></div>
-              <div class="card__corner corner corner__lt"></div>
-              <div class="card__corner corner corner__rb"></div>
-              <div class="card__corner corner corner__rt"></div>
+            <!-- CARD Slider item #2-->
+            <div class="sliders__item sliders__item_card">
+              <div class="services__card card">
+                <div class="card__corner corner corner__lb"></div>
+                <div class="card__corner corner corner__lt"></div>
+                <div class="card__corner corner corner__rb"></div>
+                <div class="card__corner corner corner__rt"></div>
 
-              <svg
-                class="card__icon"
-                width="36"
-                height="35"
-                viewBox="0 0 36 35"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M29.6665 5.83329V23.3333H12.1665V5.83329H29.6665ZM29.6665 2.91663H12.1665C10.5623 2.91663 9.24984 4.22913 9.24984 5.83329V23.3333C9.24984 24.9375 10.5623 26.25 12.1665 26.25H29.6665C31.2707 26.25 32.5832 24.9375 32.5832 23.3333V5.83329C32.5832 4.22913 31.2707 2.91663 29.6665 2.91663ZM18.6853 20.4166L13.6248 15.3125L15.6665 13.2562L18.6853 16.2895L26.1665 8.74996L28.2082 10.8062L18.6853 20.4166ZM6.33317 8.74996H3.4165V29.1666C3.4165 30.7708 4.729 32.0833 6.33317 32.0833H26.7498V29.1666H6.33317V8.74996Z"
-                  fill="#4F8FF0"
-                />
-              </svg>
-              <h3 class="card__title">Сопровождение сделок</h3>
-              <p class="card__descr">
-                Инициирование, оформление, осуществление сделки и достижение
-                результата — это именно то, чем мы занимаемся каждый день.
-              </p>
+                <svg
+                  class="card__icon"
+                  width="36"
+                  height="35"
+                  viewBox="0 0 36 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.6665 5.83329V23.3333H12.1665V5.83329H29.6665ZM29.6665 2.91663H12.1665C10.5623 2.91663 9.24984 4.22913 9.24984 5.83329V23.3333C9.24984 24.9375 10.5623 26.25 12.1665 26.25H29.6665C31.2707 26.25 32.5832 24.9375 32.5832 23.3333V5.83329C32.5832 4.22913 31.2707 2.91663 29.6665 2.91663ZM18.6853 20.4166L13.6248 15.3125L15.6665 13.2562L18.6853 16.2895L26.1665 8.74996L28.2082 10.8062L18.6853 20.4166ZM6.33317 8.74996H3.4165V29.1666C3.4165 30.7708 4.729 32.0833 6.33317 32.0833H26.7498V29.1666H6.33317V8.74996Z"
+                    fill="#4F8FF0"
+                  />
+                </svg>
+                <h3 class="card__title">Сопровождение сделок</h3>
+                <p class="card__descr">
+                  Инициирование, оформление, осуществление сделки и достижение
+                  результата — это именно то, чем мы занимаемся каждый день.
+                </p>
+              </div>
             </div>
-            <div class="services__card card">
-              <div class="card__corner corner corner__lb"></div>
-              <div class="card__corner corner corner__lt"></div>
-              <div class="card__corner corner corner__rb"></div>
-              <div class="card__corner corner corner__rt"></div>
 
-              <svg
-                class="card__icon"
-                width="36"
-                height="35"
-                viewBox="0 0 36 35"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M29.6665 5.83329V23.3333H12.1665V5.83329H29.6665ZM29.6665 2.91663H12.1665C10.5623 2.91663 9.24984 4.22913 9.24984 5.83329V23.3333C9.24984 24.9375 10.5623 26.25 12.1665 26.25H29.6665C31.2707 26.25 32.5832 24.9375 32.5832 23.3333V5.83329C32.5832 4.22913 31.2707 2.91663 29.6665 2.91663ZM18.6853 20.4166L13.6248 15.3125L15.6665 13.2562L18.6853 16.2895L26.1665 8.74996L28.2082 10.8062L18.6853 20.4166ZM6.33317 8.74996H3.4165V29.1666C3.4165 30.7708 4.729 32.0833 6.33317 32.0833H26.7498V29.1666H6.33317V8.74996Z"
-                  fill="#4F8FF0"
-                />
-              </svg>
-              <h3 class="card__title">Корпоративные споры</h3>
-              <p class="card__descr">
-                Корпоративные споры – споры, связанные с созданием юрлица,
-                управлением или участием в нем
-              </p>
+            <!-- CARD Slider item #3-->
+            <div class="sliders__item sliders__item_card">
+              <div class="services__card card">
+                <div class="card__corner corner corner__lb"></div>
+                <div class="card__corner corner corner__lt"></div>
+                <div class="card__corner corner corner__rb"></div>
+                <div class="card__corner corner corner__rt"></div>
+
+                <svg
+                  class="card__icon"
+                  width="36"
+                  height="35"
+                  viewBox="0 0 36 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.6665 5.83329V23.3333H12.1665V5.83329H29.6665ZM29.6665 2.91663H12.1665C10.5623 2.91663 9.24984 4.22913 9.24984 5.83329V23.3333C9.24984 24.9375 10.5623 26.25 12.1665 26.25H29.6665C31.2707 26.25 32.5832 24.9375 32.5832 23.3333V5.83329C32.5832 4.22913 31.2707 2.91663 29.6665 2.91663ZM18.6853 20.4166L13.6248 15.3125L15.6665 13.2562L18.6853 16.2895L26.1665 8.74996L28.2082 10.8062L18.6853 20.4166ZM6.33317 8.74996H3.4165V29.1666C3.4165 30.7708 4.729 32.0833 6.33317 32.0833H26.7498V29.1666H6.33317V8.74996Z"
+                    fill="#4F8FF0"
+                  />
+                </svg>
+                <h3 class="card__title">Корпоративные споры</h3>
+                <p class="card__descr">
+                  Корпоративные споры – споры, связанные с созданием юрлица,
+                  управлением или участием в нем
+                </p>
+              </div>
             </div>
-            <div class="services__card card">
-              <div class="card__corner corner corner__lb"></div>
-              <div class="card__corner corner corner__lt"></div>
-              <div class="card__corner corner corner__rb"></div>
-              <div class="card__corner corner corner__rt"></div>
 
-              <svg
-                class="card__icon"
-                width="36"
-                height="35"
-                viewBox="0 0 36 35"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M29.6665 5.83329V23.3333H12.1665V5.83329H29.6665ZM29.6665 2.91663H12.1665C10.5623 2.91663 9.24984 4.22913 9.24984 5.83329V23.3333C9.24984 24.9375 10.5623 26.25 12.1665 26.25H29.6665C31.2707 26.25 32.5832 24.9375 32.5832 23.3333V5.83329C32.5832 4.22913 31.2707 2.91663 29.6665 2.91663ZM18.6853 20.4166L13.6248 15.3125L15.6665 13.2562L18.6853 16.2895L26.1665 8.74996L28.2082 10.8062L18.6853 20.4166ZM6.33317 8.74996H3.4165V29.1666C3.4165 30.7708 4.729 32.0833 6.33317 32.0833H26.7498V29.1666H6.33317V8.74996Z"
-                  fill="#4F8FF0"
-                />
-              </svg>
-              <h3 class="card__title">Недвижимость и строительство</h3>
-              <p class="card__descr">
-                Консультируем по различным вопросам в области недвижимости,
-                включая градостроительное регулирование, земельные отношения
-              </p>
+            <!-- CARD Slider item #4-->
+            <div class="sliders__item sliders__item_card">
+              <div class="services__card card">
+                <div class="card__corner corner corner__lb"></div>
+                <div class="card__corner corner corner__lt"></div>
+                <div class="card__corner corner corner__rb"></div>
+                <div class="card__corner corner corner__rt"></div>
+
+                <svg
+                  class="card__icon"
+                  width="36"
+                  height="35"
+                  viewBox="0 0 36 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.6665 5.83329V23.3333H12.1665V5.83329H29.6665ZM29.6665 2.91663H12.1665C10.5623 2.91663 9.24984 4.22913 9.24984 5.83329V23.3333C9.24984 24.9375 10.5623 26.25 12.1665 26.25H29.6665C31.2707 26.25 32.5832 24.9375 32.5832 23.3333V5.83329C32.5832 4.22913 31.2707 2.91663 29.6665 2.91663ZM18.6853 20.4166L13.6248 15.3125L15.6665 13.2562L18.6853 16.2895L26.1665 8.74996L28.2082 10.8062L18.6853 20.4166ZM6.33317 8.74996H3.4165V29.1666C3.4165 30.7708 4.729 32.0833 6.33317 32.0833H26.7498V29.1666H6.33317V8.74996Z"
+                    fill="#4F8FF0"
+                  />
+                </svg>
+                <h3 class="card__title">Недвижимость и строительство</h3>
+                <p class="card__descr">
+                  Консультируем по различным вопросам в области недвижимости,
+                  включая градостроительное регулирование, земельные отношения
+                </p>
+              </div>
             </div>
-            <div class="services__card card">
-              <div class="card__corner corner corner__lb"></div>
-              <div class="card__corner corner corner__lt"></div>
-              <div class="card__corner corner corner__rb"></div>
-              <div class="card__corner corner corner__rt"></div>
 
-              <svg
-                class="card__icon"
-                width="36"
-                height="35"
-                viewBox="0 0 36 35"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M29.6665 5.83329V23.3333H12.1665V5.83329H29.6665ZM29.6665 2.91663H12.1665C10.5623 2.91663 9.24984 4.22913 9.24984 5.83329V23.3333C9.24984 24.9375 10.5623 26.25 12.1665 26.25H29.6665C31.2707 26.25 32.5832 24.9375 32.5832 23.3333V5.83329C32.5832 4.22913 31.2707 2.91663 29.6665 2.91663ZM18.6853 20.4166L13.6248 15.3125L15.6665 13.2562L18.6853 16.2895L26.1665 8.74996L28.2082 10.8062L18.6853 20.4166ZM6.33317 8.74996H3.4165V29.1666C3.4165 30.7708 4.729 32.0833 6.33317 32.0833H26.7498V29.1666H6.33317V8.74996Z"
-                  fill="#4F8FF0"
-                />
-              </svg>
-              <h3 class="card__title">Возврат страховых премий</h3>
-              <p class="card__descr">
-                Для возврата страховой премии нужно подготовить следующий пакет
-                документов: паспорт страхователя; оригинал страхового полиса
-              </p>
+            <!-- CARD Slider item #5-->
+            <div class="sliders__item sliders__item_card">
+              <div class="services__card card">
+                <div class="card__corner corner corner__lb"></div>
+                <div class="card__corner corner corner__lt"></div>
+                <div class="card__corner corner corner__rb"></div>
+                <div class="card__corner corner corner__rt"></div>
+
+                <svg
+                  class="card__icon"
+                  width="36"
+                  height="35"
+                  viewBox="0 0 36 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.6665 5.83329V23.3333H12.1665V5.83329H29.6665ZM29.6665 2.91663H12.1665C10.5623 2.91663 9.24984 4.22913 9.24984 5.83329V23.3333C9.24984 24.9375 10.5623 26.25 12.1665 26.25H29.6665C31.2707 26.25 32.5832 24.9375 32.5832 23.3333V5.83329C32.5832 4.22913 31.2707 2.91663 29.6665 2.91663ZM18.6853 20.4166L13.6248 15.3125L15.6665 13.2562L18.6853 16.2895L26.1665 8.74996L28.2082 10.8062L18.6853 20.4166ZM6.33317 8.74996H3.4165V29.1666C3.4165 30.7708 4.729 32.0833 6.33317 32.0833H26.7498V29.1666H6.33317V8.74996Z"
+                    fill="#4F8FF0"
+                  />
+                </svg>
+                <h3 class="card__title">Возврат страховых премий</h3>
+                <p class="card__descr">
+                  Для возврата страховой премии нужно подготовить следующий
+                  пакет документов: паспорт страхователя; оригинал страхового
+                  полиса
+                </p>
+              </div>
             </div>
-            <div class="services__card card">
-              <div class="card__corner corner corner__lb"></div>
-              <div class="card__corner corner corner__lt"></div>
-              <div class="card__corner corner corner__rb"></div>
-              <div class="card__corner corner corner__rt"></div>
 
-              <svg
-                class="card__icon"
-                width="36"
-                height="35"
-                viewBox="0 0 36 35"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M29.6665 5.83329V23.3333H12.1665V5.83329H29.6665ZM29.6665 2.91663H12.1665C10.5623 2.91663 9.24984 4.22913 9.24984 5.83329V23.3333C9.24984 24.9375 10.5623 26.25 12.1665 26.25H29.6665C31.2707 26.25 32.5832 24.9375 32.5832 23.3333V5.83329C32.5832 4.22913 31.2707 2.91663 29.6665 2.91663ZM18.6853 20.4166L13.6248 15.3125L15.6665 13.2562L18.6853 16.2895L26.1665 8.74996L28.2082 10.8062L18.6853 20.4166ZM6.33317 8.74996H3.4165V29.1666C3.4165 30.7708 4.729 32.0833 6.33317 32.0833H26.7498V29.1666H6.33317V8.74996Z"
-                  fill="#4F8FF0"
-                />
-              </svg>
-              <h3 class="card__title">Налоговое право и споры</h3>
-              <p class="card__descr">
-                Сопровождение налоговых проверок на любой стадии, анализ и
-                подготовка документов, защита при налоговых спорах.
-              </p>
+            <!-- CARD Slider item #6-->
+            <div class="sliders__item sliders__item_card">
+              <div class="services__card card">
+                <div class="card__corner corner corner__lb"></div>
+                <div class="card__corner corner corner__lt"></div>
+                <div class="card__corner corner corner__rb"></div>
+                <div class="card__corner corner corner__rt"></div>
+
+                <svg
+                  class="card__icon"
+                  width="36"
+                  height="35"
+                  viewBox="0 0 36 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.6665 5.83329V23.3333H12.1665V5.83329H29.6665ZM29.6665 2.91663H12.1665C10.5623 2.91663 9.24984 4.22913 9.24984 5.83329V23.3333C9.24984 24.9375 10.5623 26.25 12.1665 26.25H29.6665C31.2707 26.25 32.5832 24.9375 32.5832 23.3333V5.83329C32.5832 4.22913 31.2707 2.91663 29.6665 2.91663ZM18.6853 20.4166L13.6248 15.3125L15.6665 13.2562L18.6853 16.2895L26.1665 8.74996L28.2082 10.8062L18.6853 20.4166ZM6.33317 8.74996H3.4165V29.1666C3.4165 30.7708 4.729 32.0833 6.33317 32.0833H26.7498V29.1666H6.33317V8.74996Z"
+                    fill="#4F8FF0"
+                  />
+                </svg>
+                <h3 class="card__title">Налоговое право и споры</h3>
+                <p class="card__descr">
+                  Сопровождение налоговых проверок на любой стадии, анализ и
+                  подготовка документов, защита при налоговых спорах.
+                </p>
+              </div>
             </div>
           </div>
+        </div>
 
+        <div class="services__container container">
           <button class="services__btn btn">Все услуги</button>
         </div>
       </section>
 
+      <!-- About section #3 -->
       <section class="about">
         <div class="about__container container">
           <div class="about__text-block">
@@ -354,43 +393,22 @@
           </div>
         </div>
       </section>
-      <!-- в третьей секции два дива общих на флекс  about-->
 
-      <!-- Lawyers -->
+      <!-- Lawyers section #4 -->
       <section class="lawyers">
         <div class="container">
-          <!-- Section title -->
           <h2 class="lawyers__title title title_center">Наши юристы</h2>
           <p class="lawyers__subtitle subtitle">
             Давно выяснено, что при оценке дизайна и композиции читаемый текст
             мешает сосредоточиться. Lorem Ipsum используют потому, что тот
             обеспечивает более или менее стандартное заполнение шаблона
           </p>
-
-          <!-- Persons wrapper
-             Person #1 -->
-          <!-- <div class="lawyers__person person"> -->
-
-          <!-- </div> -->
-          <!-- Person #2 -->
-          <!-- <div class="lawyers__person person"> -->
-
-          <!-- </div> -->
-          <!-- Person #3 -->
-          <!-- <div class="lawyers__person person"> -->
-
-          <!-- </div> -->
-
-          <!-- Person #4 -->
-          <!-- <div class="lawyers__person person"> -->
-
-          <!-- </div> -->
-          <!-- </div> -->
         </div>
 
-        <!-- второй контейнер под слайдер-->
+        <!-- Sliders -->
         <div class="sliders">
           <div class="lawyers__wrapper person__wrapper sliders__track">
+            <!-- PERSON Slider item #1-->
             <div class="sliders__item">
               <div class="lawyers__person person">
                 <div class="person__overlay">
@@ -435,6 +453,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- PERSON Slider item #2-->
             <div class="sliders__item">
               <div class="lawyers__person person">
                 <div class="person__overlay">
@@ -483,6 +503,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- PERSON Slider item #3-->
             <div class="sliders__item">
               <div class="lawyers__person person">
                 <div class="person__overlay">
@@ -527,6 +549,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- PERSON Slider item #4-->
             <div class="sliders__item">
               <div class="lawyers__person person">
                 <div class="person__overlay">
@@ -578,7 +602,6 @@
       <!-- Feedback section #5 -->
       <section class="feedback">
         <div class="feedback__container container">
-          <!-- Feedback/Header -->
           <div class="feedback__header">
             <div class="feedback__title title">Что о нас говорят клиенты</div>
 
@@ -594,75 +617,81 @@
               </button>
             </div>
           </div>
+        </div>
 
-          <!-- Feedback/Middle -->
-          <div class="feedback__middle-wrapper">
-            <!-- Review -->
-            <div class="feedback__review review">
-              <!-- Review Item #1 -->
-              <div class="review__info">
-                <img
-                  class="review__photo"
-                  src="./img/feedback/feedback001.webp"
-                  srcset="
-                    ./img/feedback/feedback001.webp    1x,
-                    ./img/feedback/feedback001@2x.webp 2x,
-                    ./img/feedback/feedback001@4x.webp 4x
-                  "
-                  alt=""
-                />
+        <!-- Sliders -->
+        <div class="sliders">
+          <div class="feedback__middle-wrapper sliders__track">
+            <div class="sliders__item">
+              <div class="feedback__review review">
+                <!-- Review Item #1 -->
+                <div class="review__info">
+                  <img
+                    class="review__photo"
+                    src="./img/feedback/feedback001.webp"
+                    srcset="
+                      ./img/feedback/feedback001.webp    1x,
+                      ./img/feedback/feedback001@2x.webp 2x,
+                      ./img/feedback/feedback001@4x.webp 4x
+                    "
+                    alt=""
+                  />
 
-                <div class="review__name-wrapper">
-                  <p class="review__company">ООО “ИТ Консалтинг”</p>
-                  <strong class="review__name">Логинова Анастасия</strong>
+                  <div class="review__name-wrapper">
+                    <p class="review__company">ООО “ИТ Консалтинг”</p>
+                    <strong class="review__name">Логинова Анастасия</strong>
+                  </div>
+
+                  <img src="./icons/feather.svg" alt="" class="review__icon" />
                 </div>
 
-                <img src="./icons/feather.svg" alt="" class="review__icon" />
+                <p class="review__text">
+                  Многие думают, что Lorem Ipsum - взятый с потолка
+                  псевдо-латинский набор слов, но это не совсем так. Его корни
+                  уходят в один фрагмент классической латыни 45 года н.э., то
+                  есть более двух тысячелетий назад. Ричард МакКлинток,
+                  профессор латыни из колледжа Hampden-Sydney, штат Вирджиния,
+                  взял одно из самых странных слов ...
+                </p>
               </div>
-
-              <p class="review__text">
-                Многие думают, что Lorem Ipsum - взятый с потолка
-                псевдо-латинский набор слов, но это не совсем так. Его корни
-                уходят в один фрагмент классической латыни 45 года н.э., то есть
-                более двух тысячелетий назад. Ричард МакКлинток, профессор
-                латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из
-                самых странных слов ...
-              </p>
             </div>
 
-            <div class="feedback__review review">
-              <!-- Review Item #2 -->
-              <div class="review__info">
-                <img
-                  class="review__photo"
-                  src="./img/feedback/feedback002.webp"
-                  srcset="
-                    ./img/feedback/feedback002.webp    1x,
-                    ./img/feedback/feedback002@2x.webp 2x,
-                    ./img/feedback/feedback002@4x.webp 4x
-                  "
-                  alt=""
-                />
+            <div class="sliders__item">
+              <div class="feedback__review review">
+                <!-- Review Item #2 -->
+                <div class="review__info">
+                  <img
+                    class="review__photo"
+                    src="./img/feedback/feedback002.webp"
+                    srcset="
+                      ./img/feedback/feedback002.webp    1x,
+                      ./img/feedback/feedback002@2x.webp 2x,
+                      ./img/feedback/feedback002@4x.webp 4x
+                    "
+                    alt=""
+                  />
 
-                <div class="review__name-wrapper">
-                  <p class="review__company">АО “ПРОМАРШ”</p>
-                  <strong class="review__name">Макаров Сергей</strong>
+                  <div class="review__name-wrapper">
+                    <p class="review__company">АО “ПРОМАРШ”</p>
+                    <strong class="review__name">Макаров Сергей</strong>
+                  </div>
+
+                  <img src="./icons/feather.svg" alt="" class="review__icon" />
                 </div>
 
-                <img src="./icons/feather.svg" alt="" class="review__icon" />
+                <p class="review__text">
+                  Если вам нужен Lorem Ipsum для серьёзного проекта, вы
+                  наверняка не хотите какой-нибудь шутки, скрытой в середине
+                  абзаца. Также все другие известные генераторы Lorem Ipsum
+                  используют один и тот же текст, который они просто повторяют,
+                  пока не достигнут нужный объём.
+                </p>
               </div>
-
-              <p class="review__text">
-                Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка
-                не хотите какой-нибудь шутки, скрытой в середине абзаца. Также
-                все другие известные генераторы Lorem Ipsum используют один и
-                тот же текст, который они просто повторяют, пока не достигнут
-                нужный объём.
-              </p>
             </div>
           </div>
+        </div>
 
-          <!-- возможно убрать общую обертку -->
+        <div class="feedback__container container">
           <div class="feedback__buttons">
             <button class="feedback__btn btn">История компании</button>
             <button class="feedback__btn btn btn_grey">Сертификаты</button>
@@ -670,6 +699,7 @@
         </div>
       </section>
 
+      <!-- Matherials section #6 -->
       <section class="matherials">
         <div class="matherials__container container">
           <h2 class="matherials__title title title_center">
@@ -681,179 +711,190 @@
             мешает сосредоточиться. Lorem Ipsum используют потому, что тот
             обеспечивает более или менее стандартное заполнение шаблона
           </p>
+        </div>
 
-          <div class="matherials__middle-wrapper">
-            <article class="matherials__article article">
-              <div class="article__img-block">
-                <div class="article__overlay">
-                  <div class="article__overlay-div">
-                    <svg
-                      class="article__overlay-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                    >
-                      <path
-                        d="M20.6098 9.7875C19.8533 7.88603 18.5399 6.24164 16.8321 5.05755C15.1243 3.87347 13.0968 3.20161 11.0003 3.125C8.90381 3.20161 6.87635 3.87347 5.16852 5.05755C3.4607 6.24164 2.14737 7.88603 1.39086 9.7875C1.33977 9.92482 1.33977 10.0752 1.39086 10.2125C2.14737 12.114 3.4607 13.7584 5.16852 14.9424C6.87635 16.1265 8.90381 16.7984 11.0003 16.875C13.0968 16.7984 15.1243 16.1265 16.8321 14.9424C18.5399 13.7584 19.8533 12.114 20.6098 10.2125C20.6609 10.0752 20.6609 9.92482 20.6098 9.7875ZM11.0003 15.625C7.59134 15.625 3.9894 13.1687 2.6837 10C3.9894 6.83125 7.59134 4.375 11.0003 4.375C14.4093 4.375 18.0112 6.83125 19.3169 10C18.0112 13.1687 14.4093 15.625 11.0003 15.625Z"
-                        fill="#4F8FF0"
-                      />
-                      <path
-                        d="M11.0003 6.25C10.2371 6.25 9.49091 6.46993 8.85627 6.88199C8.22162 7.29404 7.72698 7.87971 7.43488 8.56494C7.14279 9.25016 7.06636 10.0042 7.21527 10.7316C7.36418 11.459 7.73173 12.1272 8.27146 12.6517C8.81118 13.1761 9.49883 13.5333 10.2474 13.6779C10.9961 13.8226 11.772 13.7484 12.4772 13.4645C13.1824 13.1807 13.7851 12.7001 14.2092 12.0834C14.6332 11.4667 14.8596 10.7417 14.8596 10C14.8596 9.00544 14.453 8.05161 13.7292 7.34835C13.0055 6.64509 12.0239 6.25 11.0003 6.25ZM11.0003 12.5C10.4915 12.5 9.99406 12.3534 9.57096 12.0787C9.14786 11.804 8.8181 11.4135 8.62337 10.9567C8.42864 10.4999 8.37769 9.99723 8.47696 9.51227C8.57623 9.02732 8.82127 8.58186 9.18108 8.23223C9.5409 7.8826 9.99933 7.6445 10.4984 7.54804C10.9975 7.45157 11.5148 7.50108 11.9849 7.6903C12.455 7.87952 12.8569 8.19995 13.1396 8.61107C13.4223 9.0222 13.5732 9.50555 13.5732 10C13.5732 10.663 13.3021 11.2989 12.8196 11.7678C12.3371 12.2366 11.6827 12.5 11.0003 12.5Z"
-                        fill="#4F8FF0"
-                      />
-                    </svg>
+        <div class="sliders">
+          <div class="matherials__middle-wrapper sliders__track">
+            <div class="sliders__item">
+              <article class="matherials__article article">
+                <div class="article__img-block">
+                  <div class="article__overlay">
+                    <div class="article__overlay-div">
+                      <svg
+                        class="article__overlay-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="20"
+                        viewBox="0 0 22 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M20.6098 9.7875C19.8533 7.88603 18.5399 6.24164 16.8321 5.05755C15.1243 3.87347 13.0968 3.20161 11.0003 3.125C8.90381 3.20161 6.87635 3.87347 5.16852 5.05755C3.4607 6.24164 2.14737 7.88603 1.39086 9.7875C1.33977 9.92482 1.33977 10.0752 1.39086 10.2125C2.14737 12.114 3.4607 13.7584 5.16852 14.9424C6.87635 16.1265 8.90381 16.7984 11.0003 16.875C13.0968 16.7984 15.1243 16.1265 16.8321 14.9424C18.5399 13.7584 19.8533 12.114 20.6098 10.2125C20.6609 10.0752 20.6609 9.92482 20.6098 9.7875ZM11.0003 15.625C7.59134 15.625 3.9894 13.1687 2.6837 10C3.9894 6.83125 7.59134 4.375 11.0003 4.375C14.4093 4.375 18.0112 6.83125 19.3169 10C18.0112 13.1687 14.4093 15.625 11.0003 15.625Z"
+                          fill="#4F8FF0"
+                        />
+                        <path
+                          d="M11.0003 6.25C10.2371 6.25 9.49091 6.46993 8.85627 6.88199C8.22162 7.29404 7.72698 7.87971 7.43488 8.56494C7.14279 9.25016 7.06636 10.0042 7.21527 10.7316C7.36418 11.459 7.73173 12.1272 8.27146 12.6517C8.81118 13.1761 9.49883 13.5333 10.2474 13.6779C10.9961 13.8226 11.772 13.7484 12.4772 13.4645C13.1824 13.1807 13.7851 12.7001 14.2092 12.0834C14.6332 11.4667 14.8596 10.7417 14.8596 10C14.8596 9.00544 14.453 8.05161 13.7292 7.34835C13.0055 6.64509 12.0239 6.25 11.0003 6.25ZM11.0003 12.5C10.4915 12.5 9.99406 12.3534 9.57096 12.0787C9.14786 11.804 8.8181 11.4135 8.62337 10.9567C8.42864 10.4999 8.37769 9.99723 8.47696 9.51227C8.57623 9.02732 8.82127 8.58186 9.18108 8.23223C9.5409 7.8826 9.99933 7.6445 10.4984 7.54804C10.9975 7.45157 11.5148 7.50108 11.9849 7.6903C12.455 7.87952 12.8569 8.19995 13.1396 8.61107C13.4223 9.0222 13.5732 9.50555 13.5732 10C13.5732 10.663 13.3021 11.2989 12.8196 11.7678C12.3371 12.2366 11.6827 12.5 11.0003 12.5Z"
+                          fill="#4F8FF0"
+                        />
+                      </svg>
+                    </div>
+
+                    <div class="article__corner corner corner__lb"></div>
+                    <div class="article__corner corner corner__lt"></div>
+                    <div class="article__corner corner corner__rb"></div>
+                    <div class="article__corner corner corner__rt"></div>
                   </div>
 
-                  <div class="article__corner corner corner__lb"></div>
-                  <div class="article__corner corner corner__lt"></div>
-                  <div class="article__corner corner corner__rb"></div>
-                  <div class="article__corner corner corner__rt"></div>
+                  <img
+                    src="./img/matherials/matherials001.webp"
+                    srcset="
+                      ./img/matherials/matherials001.webp    1x,
+                      ./img/matherials/matherials001@2x.webp 2x
+                    "
+                    alt="friendship"
+                    class="article__img"
+                  />
+                </div>
+                <h3 class="article__title">
+                  Воистину радостный звук: шёпот бессменных лидеров
+                </h3>
+                <div class="article__date-div">
+                  <p class="article__date">24 апр. 2023 г.</p>
+                  <div class="article__date-line"></div>
                 </div>
 
-                <img
-                  src="./img/matherials/matherials001.webp"
-                  srcset="
-                    ./img/matherials/matherials001.webp    1x,
-                    ./img/matherials/matherials001@2x.webp 2x
-                  "
-                  alt="friendship"
-                  class="article__img"
-                />
-              </div>
-              <h3 class="article__title">
-                Воистину радостный звук: шёпот бессменных лидеров
-              </h3>
-              <div class="article__date-div">
-                <p class="article__date">24 апр. 2023 г.</p>
-                <div class="article__date-line"></div>
-              </div>
-
-              <p class="article__text">
-                Предварительные выводы неутешительны: синтетическое
-                тестирование, а также свежий взгляд на привычные вещи —
-                безусловно открывает новые горизонты для экономической
-                целесообразности принимаемых решений.
-              </p>
-            </article>
-            <article class="matherials__article article">
-              <div class="article__img-block">
-                <div class="article__overlay">
-                  <div class="article__overlay-div">
-                    <svg
-                      class="article__overlay-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                    >
-                      <path
-                        d="M20.6098 9.7875C19.8533 7.88603 18.5399 6.24164 16.8321 5.05755C15.1243 3.87347 13.0968 3.20161 11.0003 3.125C8.90381 3.20161 6.87635 3.87347 5.16852 5.05755C3.4607 6.24164 2.14737 7.88603 1.39086 9.7875C1.33977 9.92482 1.33977 10.0752 1.39086 10.2125C2.14737 12.114 3.4607 13.7584 5.16852 14.9424C6.87635 16.1265 8.90381 16.7984 11.0003 16.875C13.0968 16.7984 15.1243 16.1265 16.8321 14.9424C18.5399 13.7584 19.8533 12.114 20.6098 10.2125C20.6609 10.0752 20.6609 9.92482 20.6098 9.7875ZM11.0003 15.625C7.59134 15.625 3.9894 13.1687 2.6837 10C3.9894 6.83125 7.59134 4.375 11.0003 4.375C14.4093 4.375 18.0112 6.83125 19.3169 10C18.0112 13.1687 14.4093 15.625 11.0003 15.625Z"
-                        fill="#4F8FF0"
-                      />
-                      <path
-                        d="M11.0003 6.25C10.2371 6.25 9.49091 6.46993 8.85627 6.88199C8.22162 7.29404 7.72698 7.87971 7.43488 8.56494C7.14279 9.25016 7.06636 10.0042 7.21527 10.7316C7.36418 11.459 7.73173 12.1272 8.27146 12.6517C8.81118 13.1761 9.49883 13.5333 10.2474 13.6779C10.9961 13.8226 11.772 13.7484 12.4772 13.4645C13.1824 13.1807 13.7851 12.7001 14.2092 12.0834C14.6332 11.4667 14.8596 10.7417 14.8596 10C14.8596 9.00544 14.453 8.05161 13.7292 7.34835C13.0055 6.64509 12.0239 6.25 11.0003 6.25ZM11.0003 12.5C10.4915 12.5 9.99406 12.3534 9.57096 12.0787C9.14786 11.804 8.8181 11.4135 8.62337 10.9567C8.42864 10.4999 8.37769 9.99723 8.47696 9.51227C8.57623 9.02732 8.82127 8.58186 9.18108 8.23223C9.5409 7.8826 9.99933 7.6445 10.4984 7.54804C10.9975 7.45157 11.5148 7.50108 11.9849 7.6903C12.455 7.87952 12.8569 8.19995 13.1396 8.61107C13.4223 9.0222 13.5732 9.50555 13.5732 10C13.5732 10.663 13.3021 11.2989 12.8196 11.7678C12.3371 12.2366 11.6827 12.5 11.0003 12.5Z"
-                        fill="#4F8FF0"
-                      />
-                    </svg>
-                  </div>
-                  <div class="article__corner corner corner__lb"></div>
-                  <div class="article__corner corner corner__lt"></div>
-                  <div class="article__corner corner corner__rb"></div>
-                  <div class="article__corner corner corner__rt"></div>
-                </div>
-
-                <img
-                  src="./img/matherials/matherials002.webp"
-                  srcset="
-                    ./img/matherials/matherials002.webp    1x,
-                    ./img/matherials/matherials002@2x.webp 2x
-                  "
-                  alt="friendship"
-                  class="article__img"
-                />
-              </div>
-              <h3 class="article__title">
-                Франция намерена исследовать, почему объемы выросли
-              </h3>
-              <div class="article__date-div">
-                <p class="article__date">12 мар. 2023 г.</p>
-                <div class="article__date-line"></div>
-              </div>
-              <p class="article__text">
-                Для современного мира новая модель организационной деятельности
-                влечет за собой процесс внедрения и модернизации вывода текущих
-                активов. Являясь всего лишь частью общей картины, базовые
-                сценарии поведения...
-              </p>
-            </article>
-            <article class="matherials__article article">
-              <div class="article__img-block">
-                <div class="article__overlay">
-                  <div class="article__overlay-div">
-                    <svg
-                      class="article__overlay-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                    >
-                      <path
-                        d="M20.6098 9.7875C19.8533 7.88603 18.5399 6.24164 16.8321 5.05755C15.1243 3.87347 13.0968 3.20161 11.0003 3.125C8.90381 3.20161 6.87635 3.87347 5.16852 5.05755C3.4607 6.24164 2.14737 7.88603 1.39086 9.7875C1.33977 9.92482 1.33977 10.0752 1.39086 10.2125C2.14737 12.114 3.4607 13.7584 5.16852 14.9424C6.87635 16.1265 8.90381 16.7984 11.0003 16.875C13.0968 16.7984 15.1243 16.1265 16.8321 14.9424C18.5399 13.7584 19.8533 12.114 20.6098 10.2125C20.6609 10.0752 20.6609 9.92482 20.6098 9.7875ZM11.0003 15.625C7.59134 15.625 3.9894 13.1687 2.6837 10C3.9894 6.83125 7.59134 4.375 11.0003 4.375C14.4093 4.375 18.0112 6.83125 19.3169 10C18.0112 13.1687 14.4093 15.625 11.0003 15.625Z"
-                        fill="#4F8FF0"
-                      />
-                      <path
-                        d="M11.0003 6.25C10.2371 6.25 9.49091 6.46993 8.85627 6.88199C8.22162 7.29404 7.72698 7.87971 7.43488 8.56494C7.14279 9.25016 7.06636 10.0042 7.21527 10.7316C7.36418 11.459 7.73173 12.1272 8.27146 12.6517C8.81118 13.1761 9.49883 13.5333 10.2474 13.6779C10.9961 13.8226 11.772 13.7484 12.4772 13.4645C13.1824 13.1807 13.7851 12.7001 14.2092 12.0834C14.6332 11.4667 14.8596 10.7417 14.8596 10C14.8596 9.00544 14.453 8.05161 13.7292 7.34835C13.0055 6.64509 12.0239 6.25 11.0003 6.25ZM11.0003 12.5C10.4915 12.5 9.99406 12.3534 9.57096 12.0787C9.14786 11.804 8.8181 11.4135 8.62337 10.9567C8.42864 10.4999 8.37769 9.99723 8.47696 9.51227C8.57623 9.02732 8.82127 8.58186 9.18108 8.23223C9.5409 7.8826 9.99933 7.6445 10.4984 7.54804C10.9975 7.45157 11.5148 7.50108 11.9849 7.6903C12.455 7.87952 12.8569 8.19995 13.1396 8.61107C13.4223 9.0222 13.5732 9.50555 13.5732 10C13.5732 10.663 13.3021 11.2989 12.8196 11.7678C12.3371 12.2366 11.6827 12.5 11.0003 12.5Z"
-                        fill="#4F8FF0"
-                      />
-                    </svg>
+                <p class="article__text">
+                  Предварительные выводы неутешительны: синтетическое
+                  тестирование, а также свежий взгляд на привычные вещи —
+                  безусловно открывает новые горизонты для экономической
+                  целесообразности принимаемых решений.
+                </p>
+              </article>
+            </div>
+            <div class="sliders__item">
+              <article class="matherials__article article">
+                <div class="article__img-block">
+                  <div class="article__overlay">
+                    <div class="article__overlay-div">
+                      <svg
+                        class="article__overlay-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="20"
+                        viewBox="0 0 22 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M20.6098 9.7875C19.8533 7.88603 18.5399 6.24164 16.8321 5.05755C15.1243 3.87347 13.0968 3.20161 11.0003 3.125C8.90381 3.20161 6.87635 3.87347 5.16852 5.05755C3.4607 6.24164 2.14737 7.88603 1.39086 9.7875C1.33977 9.92482 1.33977 10.0752 1.39086 10.2125C2.14737 12.114 3.4607 13.7584 5.16852 14.9424C6.87635 16.1265 8.90381 16.7984 11.0003 16.875C13.0968 16.7984 15.1243 16.1265 16.8321 14.9424C18.5399 13.7584 19.8533 12.114 20.6098 10.2125C20.6609 10.0752 20.6609 9.92482 20.6098 9.7875ZM11.0003 15.625C7.59134 15.625 3.9894 13.1687 2.6837 10C3.9894 6.83125 7.59134 4.375 11.0003 4.375C14.4093 4.375 18.0112 6.83125 19.3169 10C18.0112 13.1687 14.4093 15.625 11.0003 15.625Z"
+                          fill="#4F8FF0"
+                        />
+                        <path
+                          d="M11.0003 6.25C10.2371 6.25 9.49091 6.46993 8.85627 6.88199C8.22162 7.29404 7.72698 7.87971 7.43488 8.56494C7.14279 9.25016 7.06636 10.0042 7.21527 10.7316C7.36418 11.459 7.73173 12.1272 8.27146 12.6517C8.81118 13.1761 9.49883 13.5333 10.2474 13.6779C10.9961 13.8226 11.772 13.7484 12.4772 13.4645C13.1824 13.1807 13.7851 12.7001 14.2092 12.0834C14.6332 11.4667 14.8596 10.7417 14.8596 10C14.8596 9.00544 14.453 8.05161 13.7292 7.34835C13.0055 6.64509 12.0239 6.25 11.0003 6.25ZM11.0003 12.5C10.4915 12.5 9.99406 12.3534 9.57096 12.0787C9.14786 11.804 8.8181 11.4135 8.62337 10.9567C8.42864 10.4999 8.37769 9.99723 8.47696 9.51227C8.57623 9.02732 8.82127 8.58186 9.18108 8.23223C9.5409 7.8826 9.99933 7.6445 10.4984 7.54804C10.9975 7.45157 11.5148 7.50108 11.9849 7.6903C12.455 7.87952 12.8569 8.19995 13.1396 8.61107C13.4223 9.0222 13.5732 9.50555 13.5732 10C13.5732 10.663 13.3021 11.2989 12.8196 11.7678C12.3371 12.2366 11.6827 12.5 11.0003 12.5Z"
+                          fill="#4F8FF0"
+                        />
+                      </svg>
+                    </div>
+                    <div class="article__corner corner corner__lb"></div>
+                    <div class="article__corner corner corner__lt"></div>
+                    <div class="article__corner corner corner__rb"></div>
+                    <div class="article__corner corner corner__rt"></div>
                   </div>
 
-                  <div class="article__corner corner corner__lb"></div>
-                  <div class="article__corner corner corner__lt"></div>
-                  <div class="article__corner corner corner__rb"></div>
-                  <div class="article__corner corner corner__rt"></div>
+                  <img
+                    src="./img/matherials/matherials002.webp"
+                    srcset="
+                      ./img/matherials/matherials002.webp    1x,
+                      ./img/matherials/matherials002@2x.webp 2x
+                    "
+                    alt="friendship"
+                    class="article__img"
+                  />
+                </div>
+                <h3 class="article__title">
+                  Франция намерена исследовать, почему объемы выросли
+                </h3>
+                <div class="article__date-div">
+                  <p class="article__date">12 мар. 2023 г.</p>
+                  <div class="article__date-line"></div>
+                </div>
+                <p class="article__text">
+                  Для современного мира новая модель организационной
+                  деятельности влечет за собой процесс внедрения и модернизации
+                  вывода текущих активов. Являясь всего лишь частью общей
+                  картины, базовые сценарии поведения...
+                </p>
+              </article>
+            </div>
+            <div class="sliders__item">
+              <article class="matherials__article article">
+                <div class="article__img-block">
+                  <div class="article__overlay">
+                    <div class="article__overlay-div">
+                      <svg
+                        class="article__overlay-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="20"
+                        viewBox="0 0 22 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M20.6098 9.7875C19.8533 7.88603 18.5399 6.24164 16.8321 5.05755C15.1243 3.87347 13.0968 3.20161 11.0003 3.125C8.90381 3.20161 6.87635 3.87347 5.16852 5.05755C3.4607 6.24164 2.14737 7.88603 1.39086 9.7875C1.33977 9.92482 1.33977 10.0752 1.39086 10.2125C2.14737 12.114 3.4607 13.7584 5.16852 14.9424C6.87635 16.1265 8.90381 16.7984 11.0003 16.875C13.0968 16.7984 15.1243 16.1265 16.8321 14.9424C18.5399 13.7584 19.8533 12.114 20.6098 10.2125C20.6609 10.0752 20.6609 9.92482 20.6098 9.7875ZM11.0003 15.625C7.59134 15.625 3.9894 13.1687 2.6837 10C3.9894 6.83125 7.59134 4.375 11.0003 4.375C14.4093 4.375 18.0112 6.83125 19.3169 10C18.0112 13.1687 14.4093 15.625 11.0003 15.625Z"
+                          fill="#4F8FF0"
+                        />
+                        <path
+                          d="M11.0003 6.25C10.2371 6.25 9.49091 6.46993 8.85627 6.88199C8.22162 7.29404 7.72698 7.87971 7.43488 8.56494C7.14279 9.25016 7.06636 10.0042 7.21527 10.7316C7.36418 11.459 7.73173 12.1272 8.27146 12.6517C8.81118 13.1761 9.49883 13.5333 10.2474 13.6779C10.9961 13.8226 11.772 13.7484 12.4772 13.4645C13.1824 13.1807 13.7851 12.7001 14.2092 12.0834C14.6332 11.4667 14.8596 10.7417 14.8596 10C14.8596 9.00544 14.453 8.05161 13.7292 7.34835C13.0055 6.64509 12.0239 6.25 11.0003 6.25ZM11.0003 12.5C10.4915 12.5 9.99406 12.3534 9.57096 12.0787C9.14786 11.804 8.8181 11.4135 8.62337 10.9567C8.42864 10.4999 8.37769 9.99723 8.47696 9.51227C8.57623 9.02732 8.82127 8.58186 9.18108 8.23223C9.5409 7.8826 9.99933 7.6445 10.4984 7.54804C10.9975 7.45157 11.5148 7.50108 11.9849 7.6903C12.455 7.87952 12.8569 8.19995 13.1396 8.61107C13.4223 9.0222 13.5732 9.50555 13.5732 10C13.5732 10.663 13.3021 11.2989 12.8196 11.7678C12.3371 12.2366 11.6827 12.5 11.0003 12.5Z"
+                          fill="#4F8FF0"
+                        />
+                      </svg>
+                    </div>
+
+                    <div class="article__corner corner corner__lb"></div>
+                    <div class="article__corner corner corner__lt"></div>
+                    <div class="article__corner corner corner__rb"></div>
+                    <div class="article__corner corner corner__rt"></div>
+                  </div>
+
+                  <img
+                    src="./img/matherials/matherials003.webp"
+                    srcset="
+                      ./img/matherials/matherials003.webp    1x,
+                      ./img/matherials/matherials003@2x.webp 2x
+                    "
+                    alt="friendship"
+                    class="article__img"
+                  />
                 </div>
 
-                <img
-                  src="./img/matherials/matherials003.webp"
-                  srcset="
-                    ./img/matherials/matherials003.webp    1x,
-                    ./img/matherials/matherials003@2x.webp 2x
-                  "
-                  alt="friendship"
-                  class="article__img"
-                />
-              </div>
+                <h3 class="article__title">
+                  Сплочённость команды профессионалов продолжает удивлять
+                </h3>
+                <div class="article__date-div">
+                  <p class="article__date">02 фев. 2023 г.</p>
+                  <div class="article__date-line"></div>
+                </div>
 
-              <h3 class="article__title">
-                Сплочённость команды профессионалов продолжает удивлять
-              </h3>
-              <div class="article__date-div">
-                <p class="article__date">02 фев. 2023 г.</p>
-                <div class="article__date-line"></div>
-              </div>
-
-              <p class="article__text">
-                Современные технологии достигли такого уровня, что курс на
-                социально-ориентированный национальный проект способствует
-                повышению качества соответствующих условий активизации.
-              </p>
-            </article>
+                <p class="article__text">
+                  Современные технологии достигли такого уровня, что курс на
+                  социально-ориентированный национальный проект способствует
+                  повышению качества соответствующих условий активизации.
+                </p>
+              </article>
+            </div>
           </div>
+        </div>
 
+        <div class="matherials__container container">
           <button class="matherials__btn btn">Все новости</button>
         </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
+      <!-- Footer Top -->
       <div class="footer__top">
         <div class="footer__top-container container">
-          <!-- переименовать класс ниже -->
           <div class="footer__top-top">
             <div class="footer__logo logo">
               <a href="">
@@ -932,6 +973,7 @@
               </div>
             </div>
 
+            <!-- Footer Menu -->
             <div class="footer__menu menu">
               <ul class="menu__list">
                 <li><a class="menu__link" href="#services">Услуги</a></li>
@@ -949,6 +991,7 @@
               </ul>
             </div>
 
+            <!-- Footer Profile -->
             <div class="footer__profile profile">
               <div class="profile__top-wrapper">
                 <div class="profile__photo">
@@ -979,8 +1022,9 @@
         </div>
       </div>
 
+      <!-- Footer Bottom -->
       <div class="footer__bottom">
-        <div class="footer__bottom container">
+        <div class="footer__bottom-container container">
           <p class="footer__rights">Все права защищены, 2023</p>
           <a href="" class="footer__policy-link">
             <p class="footer__policy">

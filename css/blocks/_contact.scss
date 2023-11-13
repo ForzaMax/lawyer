@@ -39,6 +39,14 @@
     font-weight: 700;
     line-height: 150%;
   }
+
+  &__label,
+  &__detail {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
 }
 
 @media screen and (max-width: 955px) {

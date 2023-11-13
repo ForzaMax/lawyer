@@ -36,3 +36,13 @@
     }
   }
 }
+
+@media (max-width: 564px) {
+  .lawyers {
+    padding: 40px 0 46px;
+
+    &__wrapper {
+      margin-top: 24px;
+    }
+  }
+}

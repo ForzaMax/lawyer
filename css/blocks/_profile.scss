@@ -39,3 +39,11 @@
     margin-right: auto;
   }
 }
+
+@media screen and (max-width: 1240px) {
+  .profile {
+    &__desc {
+      max-width: 334px;
+    }
+  }
+}

@@ -6,6 +6,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+    background: lightgray;
   }
 
   &__title {
@@ -36,6 +37,7 @@
 
     &__middle-wrapper {
       overflow-x: scroll;
+      margin-top: 29px;
     }
   }
 }
@@ -47,6 +49,14 @@
 
     &__btn {
       margin: 40px auto 0;
+    }
+
+    &__subtitle {
+      margin-top: 16px;
+    }
+
+    &__middle-wrapper {
+      margin-top: 24px;
     }
   }
 }
