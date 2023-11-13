@@ -973,6 +973,14 @@ button {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
+.review__photo {
+  max-width: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+}
 .review__name-wrapper {
   margin-right: auto;
 }

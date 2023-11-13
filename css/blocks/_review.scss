@@ -29,6 +29,12 @@
     -webkit-box-orient: vertical;
   }
 
+  &__photo {
+    max-width: 80px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+  }
   &__name-wrapper {
     margin-right: auto;
   }
