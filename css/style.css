@@ -824,6 +824,7 @@ button {
 }
 .sliders__track_card {
   gap: 38px 24px;
+  max-width: 1320px;
 }
 .sliders__track::-webkit-scrollbar {
   display: none;
@@ -1115,8 +1116,6 @@ button {
 }
 .article__img-block {
   position: relative;
-  min-height: 200px;
-  max-height: 270px;
 }
 .article__img-block:hover + h3 {
   color: var(--blue-color-100, #4f8ff0);
