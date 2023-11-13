@@ -34,7 +34,7 @@
   }
 
   &__item {
-    cursor: pointer;
+    // cursor: pointer;
 
     &:first-child {
       margin-left: calc((100vw - $container-width) / 2);

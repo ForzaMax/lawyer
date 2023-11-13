@@ -22,6 +22,7 @@ a {
 
   /* цвет родителя, что бы не прописывать visited */
   color: inherit;
+  cursor: url(../icons/la_hand-pointer-gray.svg), pointer;
 
   // &:hover {
   //   text-decoration: none;
@@ -30,5 +31,7 @@ a {
 
 button {
   cursor: pointer;
+  cursor: url(../icons/la_hand-pointer-gray.svg), pointer;
+
   // cursor: url("../icons/la_hand-pointer.svg"), auto;
 }

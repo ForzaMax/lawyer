@@ -39,10 +39,12 @@ a {
   text-decoration: none;
   /* цвет родителя, что бы не прописывать visited */
   color: inherit;
+  cursor: url(../icons/la_hand-pointer-gray.svg), pointer;
 }
 
 button {
   cursor: pointer;
+  cursor: url(../icons/la_hand-pointer-gray.svg), pointer;
 }
 
 .contacts {
@@ -494,6 +496,7 @@ button {
   font-weight: 900;
   line-height: 120%;
   text-transform: uppercase;
+  cursor: url(../icons/la_hand-pointer-gray.svg), pointer;
   transition: 0.3s;
 }
 .btn:hover {
@@ -828,9 +831,6 @@ button {
 }
 .sliders__track::-webkit-scrollbar {
   display: none;
-}
-.sliders__item {
-  cursor: pointer;
 }
 .sliders__item:first-child {
   margin-left: calc((100vw - 1320px) / 2);
