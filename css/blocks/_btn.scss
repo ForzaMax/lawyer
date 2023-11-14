@@ -46,4 +46,8 @@
       color: black;
     }
   }
+
+  &__link {
+    cursor: url(../icons/la_hand-pointer-gray.svg), pointer;
+  }
 }

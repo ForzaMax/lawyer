@@ -39,7 +39,7 @@ a {
   text-decoration: none;
   /* цвет родителя, что бы не прописывать visited */
   color: inherit;
-  cursor: url(../icons/la_hand-pointer-gray.svg), pointer;
+  cursor: url(../icons/la_hand-pointer-white.svg), pointer;
 }
 
 button {
@@ -63,6 +63,7 @@ button {
 .burger__icon {
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
 .burger__icon_close {
   position: absolute;
@@ -472,7 +473,7 @@ button {
   line-height: 150%;
   background: inherit;
   border: none;
-  cursor: pointer;
+  cursor: url(../icons/la_hand-pointer-white.svg), pointer;
 }
 .header__container {
   min-height: inherit;
@@ -523,6 +524,9 @@ button {
   border: 2px solid var(--white-color-300, #e6e6e6);
   background: var(--white-color-300, #e6e6e6);
   color: black;
+}
+.btn__link {
+  cursor: url(../icons/la_hand-pointer-gray.svg), pointer;
 }
 
 .home {
@@ -1180,6 +1184,7 @@ button {
   padding: 80px 0;
 }
 .matherials img {
+  display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1267,6 +1272,7 @@ button {
   font-size: 16px;
   font-weight: 700;
   line-height: 150%;
+  transition: 0.2s;
 }
 .contact__label, .contact__detail {
   overflow: hidden;
