@@ -190,7 +190,7 @@ button {
   position: relative;
   max-width: 320px;
   color: #222;
-  cursor: url(../icons/la_hand-pointer.svg), pointer;
+  cursor: url(../icons/la_hand-pointer-blue.svg), pointer;
   /* минимальная ширина по адаптивному макету */
   min-width: 300px;
   background: #fff;
